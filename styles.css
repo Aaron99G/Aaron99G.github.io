@@ -3,16 +3,32 @@ body {
     background-color: hsl(235, 50%, 75%);
 }
 
-div {
-    color: aqua;
+#top {
+    background-color: hsl(170, 50%, 75%);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    overflow: auto;
 }
 
-img {
-    max-width: 250px;
-    max-height: 250px;
+#about {
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    margin-top: 4%;
+    border-bottom: solid;
+}
+
+#skills {
+    position: fixed;
+    height: fit-content;
+    width: 100%;
+    margin-top: 10%;
 }
 
 #row {
+    position: relative;
     padding-inline-end: 10%;
     align-content: flex-start;
     background-color: rgb(6, 47, 71);
@@ -20,8 +36,19 @@ img {
     float: left;
 }
 
-#skills::after {
-    content: "";
-    clear: both;
-    display: table;
+#projects {
+    position: fixed;
+    height: fit-content;
+    margin-top: 28%;
+}
+
+#contact {
+    position: fixed;
+    margin-top: 35%;
+}
+
+img {
+    margin-left: 20px;
+    max-width: 250px;
+    max-height: 250px;
 }
