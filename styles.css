@@ -1,4 +1,27 @@
-.body {
+body {
     background-image: url(https://imgur.com/lyBJUB3);
-    background-color: hsl(235, 100%, 50%);
+    background-color: hsl(235, 50%, 75%);
+}
+
+div {
+    color: aqua;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+#row {
+    padding-inline-end: 10%;
+    align-content: flex-start;
+    background-color: rgb(6, 47, 71);
+    width: 75px;
+    float: left;
+}
+
+#skills::after {
+    content: "";
+    clear: both;
+    display: table;
 }
