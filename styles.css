@@ -1,56 +1,116 @@
-body {
-    background-image: url(https://imgur.com/lyBJUB3);
-    background-color: hsl(235, 50%, 75%);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-#top {
-    background-color: hsl(170, 50%, 75%);
+@keyframes backgroundColorPalette {
+    0% {
+        background: #ee6055;
+    }
+    25% {
+        background: #60d394;
+    }
+    50% {
+        background: #aaf683;
+    }
+    75% {
+        background: #ffd97d;
+    }
+    100% {
+        background: #ff9b85;
+    }
+}
+
+body {
+    animation: backgroundColorPalette;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+/* header {
     position: fixed;
     top: 0%;
     left: 0%;
     width: 100%;
     overflow: auto;
+} */
+
+ul {
+    float: right;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul li {
+    display: inline-flex;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#links {
+    text-decoration: none;
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+}
+
+#links:hover {
+    background-color: white;
+    color: black;
+}
+
+#me {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#title {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #about {
-    position: fixed;
-    height: fit-content;
-    width: 100%;
-    margin-top: 4%;
-    border-bottom: solid;
+    position: absolute;
+    top: 20%;
+    right: 25%;
 }
 
-#skills {
-    position: fixed;
+.skills {
+    position: absolute;
+    top: 30%;
     height: fit-content;
-    display: inline-block;
     width: 100%;
-    margin-top: 10%;
+    display: inline-block;
+}
+
+#skill {
+    height: 150px;
+    width: 150px;
 }
 
 #row {
-    position: relative;
-    padding-inline-end: 10%;
-    align-content: flex-start;
-    background-color: rgb(6, 47, 71);
-    width: 75px;
     float: left;
+    height: 150px;
+    width: 150px;
 }
 
 #projects {
-    position: fixed;
+    position: absolute;
     height: fit-content;
-    margin-top: 28%;
+    top: 60%;
+    left: 5%;
 }
 
 #contact {
-    position: fixed;
-    margin-top: 35%;
-}
-
-img {
-    margin-left: 10px;
-    border-radius: 100%;
-    max-width: 250px;
-    max-height: 250px;
+    position: absolute;
+    top: 70%;
+    left: 5%;
 }
