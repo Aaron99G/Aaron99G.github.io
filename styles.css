@@ -28,15 +28,6 @@ body {
     animation-direction: alternate;
 }
 
-
-/* header {
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    overflow: auto;
-} */
-
 ul {
     float: right;
     list-style: none;
@@ -52,6 +43,7 @@ ul li {
 #links {
     text-decoration: none;
     color: black;
+    margin-top: 5px;
     padding: 5px 20px;
     border: 1px solid transparent;
 }
@@ -66,8 +58,8 @@ ul li {
     width: 100px;
     border-radius: 50%;
     float: left;
-    padding-left: 20px;
-    padding-top: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 #title {
@@ -80,15 +72,17 @@ ul li {
 #about {
     position: absolute;
     top: 20%;
-    right: 25%;
+    left: 5%;
+    overflow: hidden;
 }
 
-.skills {
+#skills {
     position: absolute;
     top: 30%;
     height: fit-content;
     width: 100%;
     display: inline-block;
+    overflow: hidden;
 }
 
 #skill {
@@ -100,6 +94,8 @@ ul li {
     float: left;
     height: 150px;
     width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
 }
 
 #projects {
@@ -107,10 +103,12 @@ ul li {
     height: fit-content;
     top: 60%;
     left: 5%;
+    overflow: hidden;
 }
 
 #contact {
     position: absolute;
     top: 70%;
     left: 5%;
+    overflow: hidden;
 }
